@@ -1,0 +1,301 @@
+.tests {
+    padding-top: 3.2rem;
+    padding-bottom: 6.4rem;
+}
+.tests__title {
+    margin-bottom: 2.4rem;
+}
+.tests-block {
+    display: flex;
+    gap: 2.4rem;
+}
+.tests-block__img img{
+    height: 100%;
+}
+.tests-block__form {
+    width: 41rem;
+    padding: 1.6rem 2.4rem;
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+}
+.tests-block__form-title {
+    margin-bottom: 3.2rem;
+}
+.tests-block__wrapper {
+    margin-bottom: 1.6rem;
+    padding: 1rem 1.2rem 1rem 3.6rem;
+    position: relative;
+    display: flex;
+    height: 42px;
+    line-height: 42px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: #ffffff;
+}
+.tests-block__wrapper::before{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    top: 11px;
+    left: 12px;
+}
+.tests-block__wrapper--user::before{
+    background: url('../images/home/form-user.svg') no-repeat;
+}
+.tests-block__wrapper--phone::before{
+    background: url('../images/home/form-call.svg') no-repeat;
+}
+.tests-block__wrapper--email::before{
+    background: url('../images/home/form-email.svg') no-repeat;
+}
+.tests-block__wrapper--inn::before{
+    background: url('../images/home/form-inn.svg') no-repeat;
+}
+.tests-block__form-input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    color: #bfbfbf;
+}
+.tests-block__form-input::placeholder{
+    font-size: 16px;
+    color: #bfbfbf;
+}
+.tests-block__form-textarea {
+    padding: 1rem 1.2rem 1rem 1.6rem;
+    margin-bottom: 1.6rem;
+    width: 100%;
+    height: 94px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    resize: none;
+    background: #ffffff;
+    font-size: 16px;
+    color: #bfbfbf;
+}
+.tests-block__form-textarea::placeholder{
+    font-size: 16px;
+    color: #bfbfbf;
+}
+.tests-block__bottom {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3.2rem;
+}
+.tests-block__form-file {
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    color: #848e9f;
+    cursor: pointer;
+}
+.tests-block__form-btn {
+    width: 100%;
+    height: 58px;
+    line-height: 58px;
+}
+
+
+//PROCEDURE
+.procedure{
+    padding-bottom: 2.4rem;
+}
+.procedure__inner {
+    padding: 1.6rem 4.4rem;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+}
+.procedure__title {
+    margin-bottom: 2.4rem;
+}
+.procedure-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 8rem;
+}
+.procedure-block__left {
+    width: calc(100% / 2 - 8rem);
+   
+}
+.procedure-block__item {
+    padding: 2rem 1rem 2rem 4rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3.2rem;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 8px;
+}
+.procedure-block__item:last-child{
+    margin-bottom: 2rem;
+}
+.procedure-block__item-title {
+    font-size: 5.6rem;
+    line-height: 120%;
+    background-color: #ffffff;
+    color: #3366ff;
+    transform: translateX(-55px);
+}
+.procedure-block__right {
+    width: calc(100% / 2 - 8rem);
+}
+.word {
+    padding-bottom: 3.2rem;
+}
+.word-block {
+    display: flex;
+    gap: 3.2rem;
+}
+.word-block__item {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 1.6rem 2.4rem;
+    width: calc(100% / 3 - 3.2rem);
+    border-radius: 16px;
+    background: #ffffff;
+}
+.word-block__content-link {
+    color: #3366ff;
+}
+.word-block__content-title {
+    font-weight: 600;
+}
+.region {
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+}
+.region__title {
+    margin-bottom: 2.4rem;
+}
+.region__text {
+    margin-bottom: 2.5rem;
+}
+.region-block {
+    padding-top: 3rem;
+    display: flex;
+    gap: 2.4rem;
+}
+.region-block__list {
+    width: calc(100% / 2 - 2.4rem);
+}
+.region-block__list-item {
+    margin-bottom: 1rem;
+    list-style: disc;
+}
+
+//.advantages
+.advantages {
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+    background: #ffffff;
+}
+.advantages__title {
+    margin-bottom: 2.4rem;
+    text-align: center;
+}
+.advantages-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.advantages-block__item {
+    padding-bottom: 3.4rem;
+    padding-top: 3.4rem;
+    width: calc(100% / 3);
+    border-bottom: 1px solid rgb(224, 224, 224);
+    border-right: 1px solid rgb(224, 224, 224);
+}
+.advantages-block__item:nth-child(4),
+.advantages-block__item:nth-child(5),
+.advantages-block__item:nth-child(6){
+    border-bottom: none;
+}
+.advantages-block__item:nth-child(3),
+.advantages-block__item:nth-child(6){
+    border-right: none;
+}
+.advantages-block__item-img img{
+    margin: 0 auto 2rem auto;
+}
+.advantages-block__item-title {
+    margin-bottom: 1.6rem;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 3.2rem;
+    text-align: center;
+}
+.advantages-block__item-text {
+    color: #667085;
+    text-align: center;
+}
+
+
+
+//REVIEWS
+.reviews {
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+    background-color: #ffffff;
+}
+.reviews__title {
+    margin-bottom: 2.4rem;
+    text-align: center;
+}
+.reviews-slider__item {
+    padding: 2rem;
+    width: 41rem;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-right: 1px solid rgb(224, 224, 224);
+}
+.reviews-slider__item:hover{
+    border: 1px solid #3366ff;
+}
+.reviews-slider__item-img {
+    margin-bottom: 2rem;
+}
+.reviews-slider__item-text {
+    margin-bottom: 1.6rem;
+    color: #667085;
+}
+.reviews-slider__item-name {
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+.reviews-slider__item-job {
+    color: #667085;
+}
+.reviews-slider__arrows{
+    width: 150px;
+    margin: 2rem 0 0 auto;
+    display: flex;
+    gap: 1rem;
+}
+.reviews-slider__arrows .slick-prev.slick-arrow,
+.reviews-slider__arrows .slick-next.slick-arrow{
+    padding: 0;
+    font-size: 0;
+    background-color: transparent;
+    border: none;
+    width: 63px;
+    height: 63px;
+    z-index: 10;
+    box-shadow: 4px 4px 10px 1px rgba(66, 66, 66, 0.1);
+}
+.reviews-slider__arrows .slick-prev.slick-arrow{
+    background: url('../images/tests/slider-left-arrows.png') no-repeat;
+}
+.reviews-slider__arrows .slick-next.slick-arrow{
+    background: url('../images/tests/slider-right-arrows.png') no-repeat;
+}
+.yandex {
+    padding-bottom: 5rem;
+    background: #ffffff;
+}
+.yandex-box {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+}

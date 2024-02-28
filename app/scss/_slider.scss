@@ -1,0 +1,117 @@
+.slider {
+    padding-bottom: 6.5rem;
+    background: #fff;
+}
+.slider-block {
+    display: flex;
+    gap: 1rem;
+}
+.slider-block__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+    width: 33%;
+    border-radius: 20px;
+    background: linear-gradient(133.84deg, rgb(231, 237, 255) -0.838%,rgb(232, 252, 254) 100%);
+}
+.slider-block__left-title {
+    margin-bottom: 3rem;
+}
+.slider-block__left-link {
+    margin-bottom: 2.4rem;
+    color: #3366ff;
+}
+.slider-block__center {
+    width: 33%;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px 1px rgba(66, 66, 66, 0.1);
+    background: rgb(255, 255, 255);
+    scale: 1.1;
+}
+.slider-block__item-img{
+    border-radius: 20px;
+    background-color: #fff;
+}
+.slider-block__item-img img{
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+
+.slider .slick-prev.slick-arrow,
+.slider .slick-next.slick-arrow{
+    position: absolute;
+    width: 63px;
+    height: 63px;
+    top: 50%;
+    padding: 0;
+    font-size: 0;
+    transform: translate(-50%, -50%);
+    border: none;
+    background-color: transparent;
+    z-index: 9;
+    box-shadow: 4px 4px 10px 1px rgba(66, 66, 66, 0.1);
+}
+.slider .slick-prev.slick-arrow{
+    left: 0;
+    background: url('../images/tests/slider-left-arrows.png') no-repeat;
+}
+.slider .slick-next.slick-arrow{
+    right: -51px;
+    background: url('../images/tests/slider-right-arrows.png') no-repeat;
+}
+.slider-block__right {
+    padding: 2rem 7rem;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    background: linear-gradient(133.84deg, rgb(231, 237, 255) -0.838%,rgb(232, 252, 254) 100%);
+}
+.slider-block__right-text {
+    margin-bottom: 2.5rem;
+}
+.slider-block__right-btn {
+    width: 202px;
+    height: 58px;
+    line-height: 58px;
+}
+.circle {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: url('../images/tests/circle.png') no-repeat;
+  
+}
+.text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: anim 10s linear infinite;
+}
+.text p{
+  font-size: 20px;
+}
+@keyframes anim{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.text span{
+    position: absolute;
+    left: 41px;
+    top: -28px;
+    font-size: 14px;
+    line-height: 26px;
+    transform-origin: 0px 67px;
+    color: #f06b4d;
+}
+.tests__circle{
+    transform: translate(50px, 50px);
+}
