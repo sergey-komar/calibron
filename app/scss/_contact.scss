@@ -1,0 +1,112 @@
+.form-contact{
+    padding-top: 3.2rem;
+}
+.contact__title{
+    margin-bottom: 2.4rem;
+}
+.form-contact .form__inner{
+    margin-bottom: 3.2rem;
+}
+.form__inner{
+    padding: 3.2rem;
+    border-radius: 16px;
+    background: #ffffff;
+}
+.form__inner .form-block{
+    margin-bottom: 3.2rem;
+}
+.form-contact .form-block__item{
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+}
+.form-contact .form-block__info{
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+}
+.employees-title {
+    margin-bottom: 2.4rem;
+}
+.employees-block {
+    margin-bottom: 6.4rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2.4rem;
+}
+.employees-block__item {
+    width: calc(100% / 3 - 2.4rem);
+    padding: 2.2rem 3.2rem 1.2rem 3.2rem;
+    border-radius: 16px;
+    background: #ffffff;
+}
+.employees-block__item-img {
+    margin-bottom: 1.4rem;
+}
+.employees-block__item-img img{
+    margin: 0 auto;
+}
+.employees-block__item-title {
+    margin-bottom: 1rem;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 3.2rem;
+}
+.employees-block__item-job {
+    margin-bottom: 2.8rem;
+    color: #3366ff;
+}
+.employees-block__item-info {
+    display: block;
+    margin-bottom: 1.6rem;
+    margin-left: 25px;
+    position: relative;
+}
+.employees-block__item-info:hover{
+    color: #3366ff;
+}
+.employees-block__item-info::before{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    top: 4px;
+    left: -25px;
+}
+.employees-block__item-info--email::before {
+    background: url('../images/home/form-email.svg') no-repeat;
+}
+.employees-block__item-info--tel::before {
+    background: url('../images/home/form-call.svg') no-repeat;
+}
+.information-block {
+    margin-bottom: 4rem;
+    position: relative;
+    padding: 2.4rem 3.2rem;
+    border-radius: 16px;
+    background: #ffffff;
+}
+.information-block::before{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 93%;
+    top: 20px;
+    left: 30%;
+    background-color: #e0e0e0;
+}
+.information-block__item {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+.information-block__item-name {
+    width: 30%;
+  
+}
+.information-block__item-text {
+    width: 70%;
+    font-weight: 600;
+}

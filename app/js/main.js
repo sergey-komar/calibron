@@ -12,7 +12,16 @@ $(function () {
     arrows: true,
     appendArrows: '.reviews-slider__arrows',
   });
+
+
+  //ACCARDION
+  $(".questions-accardion__btn").on("click", function () {
+    $(this).next().slideToggle(500);
+  });
 });
+
+
+
 
 window.addEventListener("DOMContentLoaded", () => {
   const headerSerch = document.querySelector(".header-bottom__search");
@@ -33,13 +42,29 @@ window.addEventListener("DOMContentLoaded", () => {
 
   //TEXT
   const text = document.querySelector(".text p");
-  text.innerHTML = text.innerText
+  if(text){
+    text.innerHTML = text.innerText
     .split("")
     .map(
       (char, i) =>
         ` <span style="transform: rotate(${i * 13.9}deg);">${char}</span>`
     )
     .join("");
+  }
+  
+//ACC
+const questionsWrapper = document.querySelectorAll('.questions__wrapper');
+
+
+if(questionsWrapper){
+  questionsWrapper.forEach(item => {
+    item.addEventListener('click', () => {
+      item.classList.toggle('open')
+    })
+  })
+}
+
+
 
 
 
