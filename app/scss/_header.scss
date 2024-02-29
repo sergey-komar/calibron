@@ -159,6 +159,9 @@
 }
 .breadcrumb__list-link {
     font-size: 12px;
+    color: #667085;
+}
+.breadcrumb__list-item:last-child .breadcrumb__list-link{
     color: #bfbfbf;
 }
 .search {

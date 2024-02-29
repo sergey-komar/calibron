@@ -29,6 +29,9 @@ window.addEventListener("DOMContentLoaded", () => {
     headerSerch.classList.remove("searh-hidden");
   });
 
+
+
+  //TEXT
   const text = document.querySelector(".text p");
   text.innerHTML = text.innerText
     .split("")
@@ -37,4 +40,96 @@ window.addEventListener("DOMContentLoaded", () => {
         ` <span style="transform: rotate(${i * 13.9}deg);">${char}</span>`
     )
     .join("");
+
+
+
+//TABS
+const tabsItem = document.querySelector('.tabs__item');
+const tabsItemBtn = document.querySelectorAll('.tabs__item-btn');
+const tabsContent = document.querySelectorAll('.tabs__content');
+
+function tabsHide(){
+    tabsContent.forEach(item => {
+        item.classList.add('hide');
+        item.classList.remove('show');
+    });
+
+    tabsItemBtn.forEach(btn =>{
+        btn.classList.remove('tabs-active');
+    })
+}
+function tabsShow(i){
+    tabsContent[i].classList.add('show');
+    tabsContent[i].classList.remove('hide');
+    tabsItemBtn[i].classList.add('tabs-active');
+}
+
+
+if(tabsItem && tabsContent && tabsItemBtn){
+  tabsItem.addEventListener('click', (e)=>{
+    const target = e.target;
+    
+    if(target && target.classList.contains('tabs__item-btn')){
+        tabsItemBtn.forEach((item, i)=>{
+            if(target == item){
+                tabsHide();
+                tabsShow(i);
+            }
+           
+        })
+       
+    }
+})
+
+tabsHide();
+tabsShow(0);
+}//if
+
+const tabsItemModernization = document.querySelector('.modernization-tabs__item');
+const tabsItemBtnModernization = document.querySelectorAll('.modernization-tabs__item-btn');
+const tabsContentModernization = document.querySelectorAll('.modernization-tabs__content');
+
+function tabsHideModernization(){
+    tabsContentModernization.forEach(item => {
+        item.classList.add('hide-modernization');
+        item.classList.remove('show-modernization');
+    });
+
+    tabsItemBtnModernization.forEach(btn =>{
+        btn.classList.remove('modernization-tabs-active');
+    })
+}
+function tabsShowModernization(i){
+    tabsContentModernization[i].classList.add('show-modernization');
+    tabsContentModernization[i].classList.remove('hide-modernization');
+    tabsItemBtnModernization[i].classList.add('modernization-tabs-active');
+}
+
+
+if(tabsItemModernization && tabsContentModernization && tabsItemBtnModernization){
+  tabsItemModernization.addEventListener('click', (e)=>{
+    const target = e.target;
+    
+    if(target && target.classList.contains('modernization-tabs__item-btn')){
+        tabsItemBtnModernization.forEach((item, i)=>{
+            if(target == item){
+                tabsHideModernization();
+                tabsShowModernization(i);
+            }
+           
+        })
+       
+    }
+})
+
+tabsHideModernization();
+tabsShowModernization(0);
+}//if
+
+
+
+
+
+
+
 });
