@@ -115,3 +115,28 @@
 .tests__circle{
     transform: translate(50px, 50px);
 }
+.slider-block__right-btn--mobile{
+    display: none;
+}
+
+
+@media(max-width: 550px){
+    .reviews .slick-dots{
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    .reviews .slick-dots li button{
+        padding: 0;
+        font-size: 0;
+        border: none;
+        width: 10px;
+        height: 10px;
+        background-color: transparent;
+        border-radius: 50%;
+        border: 1px solid #667085;
+    }
+    .reviews .slick-dots li.slick-active button{
+        background-color: #3366ff;
+    }
+}

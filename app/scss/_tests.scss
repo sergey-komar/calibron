@@ -11,6 +11,7 @@
 }
 .tests-block__img img{
     height: 100%;
+    object-fit: cover;
 }
 .tests-block__form {
     width: 41rem;
@@ -156,6 +157,9 @@
     border-radius: 16px;
     background: #ffffff;
 }
+.word-block__item-img img{
+    min-width: 64px;
+}
 .word-block__content-link {
     color: #3366ff;
 }
@@ -181,6 +185,7 @@
     width: calc(100% / 2 - 2.4rem);
 }
 .region-block__list-item {
+    margin-left: 2rem;
     margin-bottom: 1rem;
     list-style: disc;
 }
@@ -203,6 +208,8 @@
 .advantages-block__item {
     padding-bottom: 3.4rem;
     padding-top: 3.4rem;
+    display: flex;
+    flex-direction: column;
     width: calc(100% / 3);
     border-bottom: 1px solid rgb(224, 224, 224);
     border-right: 1px solid rgb(224, 224, 224);
@@ -227,6 +234,7 @@
     text-align: center;
 }
 .advantages-block__item-text {
+    margin-top: auto;
     color: #667085;
     text-align: center;
 }

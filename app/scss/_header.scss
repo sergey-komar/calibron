@@ -78,6 +78,7 @@
 }
 
 .menu__list li a{
+    color: #464753;
     font-size: 16px;
 }
 
@@ -97,7 +98,8 @@
 .header-bottom__search {
     max-width: 86rem;
     position: absolute;
-    display: flex;
+    // display: flex;
+    display: none;
     justify-content:space-between;
     align-items: center;
     width: 100%;
@@ -108,7 +110,9 @@
     z-index: 2;
     transform: translateY(-250px);
 }
-
+.header-bottom__search.searh-hidden{
+    display: flex;
+}
 .header-bottom__form {
     width: 100%;
     position: relative;
@@ -142,10 +146,16 @@
 .breadcrumb__list {
     display: flex;
     align-items: center;
-    gap: 4rem;
+    // column-gap: 3rem;
+    row-gap: 0;
+    flex-wrap: wrap;
 }
 .breadcrumb__list-item {
     position: relative;
+    
+}
+.breadcrumb__list-item + .breadcrumb__list-item{
+    margin-left: 3rem;
 }
 .breadcrumb__list-item:nth-child(2)::before,
 .breadcrumb__list-item:nth-child(3)::before{
@@ -155,11 +165,12 @@
     height: 12px;
     background: url('../images/home/breadcrumbs-arrows.svg') no-repeat;
     top: 9px;
-    left: -20px;
+    left: -17px;
 }
 .breadcrumb__list-link {
     font-size: 12px;
     color: #667085;
+    line-height: 20px;
 }
 .breadcrumb__list-item:last-child .breadcrumb__list-link{
     color: #bfbfbf;
@@ -195,7 +206,7 @@
     border: none;
 }
 .search-form__close {
-    margin-right: 2rem;
+    margin-right: 1rem;
 }
 .pagination {
     width: 250px;
