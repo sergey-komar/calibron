@@ -1,0 +1,224 @@
+.measurements {
+    padding: 4rem 0 8rem 0;
+    background-color: #fff;
+}
+
+.measurements-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.measurements-block__left {
+    width: 50%;
+    padding: 4rem;
+    background: url('../images/home/Banner.png') no-repeat;
+    background-size: cover;
+    color: #fff;
+    border-radius: 2rem;
+}
+
+.measurements-block__left-text {
+    margin-bottom: 2rem;
+}
+
+.measurements-block__left-title {
+    margin-bottom: 2.4rem;
+}
+
+.measurements-block__left-desc {
+    max-width: 44rem;
+    margin-bottom: 14rem;
+}
+
+.measurements-block__left-btn {
+    width: 29rem;
+    height: 5.8rem;
+    line-height: 5.8rem;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #fff;
+    color: #3366ff;
+    border: none;
+    border-radius: 8px;
+}
+
+.measurements-block__right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.measurements-block__content {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.measurements-block__category {
+    width: 50%;
+}
+
+.measurements-block__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    background: linear-gradient(90.00deg, rgb(231, 237, 255), rgb(232, 252, 254) 100%);
+}
+
+.measurements-block__item:hover {
+    background: linear-gradient(90.00deg, rgb(51, 102, 255) 34.271%, rgb(0, 216, 247) 100%);
+}
+
+.measurements-block__item-title {
+    position: relative;
+    padding: 0 0 1rem 1rem;
+    margin-top: auto;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.measurements-block__item:hover .measurements-block__item-title {
+    color: #fff;
+}
+
+.measurements-block__item-title::after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    top: 11px;
+    right: -24px;
+    background: url('../images/home/arrows-measurements.svg') no-repeat;
+}
+
+.measurements-block__item:hover .measurements-block__item-title::after {
+    background: url('../images/home/arrows-measurements-hover.svg') no-repeat;
+}
+
+
+.measurements-block__search {
+    padding: 1.8rem;
+    background: linear-gradient(90.00deg, rgb(231, 237, 255), rgb(232, 252, 254) 100%);
+    border-radius: 8px;
+}
+
+.measurements-block__search-title {
+    margin-bottom: 2rem;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.measurements-block__form {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+}
+
+.measurements-block__form::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url('../images/home/search.svg') no-repeat;
+    left: 6px;
+    top: 10px;
+}
+
+.measurements-block__form-input {
+    padding: 0 2rem 0 3rem;
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #bfbfbf;
+}
+
+.measurements-block__form-input::placeholder {
+    font-size: 16px;
+    color: #bfbfbf;
+}
+
+.measurements-block__form-btn {
+    width: 140px;
+    height: 38px;
+    line-height: 38px;
+}
+
+.trust {
+    padding: 4rem 0 8rem 0;
+    background: linear-gradient(133.84deg, rgb(231, 237, 255) -1.1%, rgb(232, 252, 254) 100%);
+}
+
+.trust__title {
+    margin-bottom: 4.2rem;
+    text-align: center;
+}
+
+
+
+.trust-block {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.trust-block__item {
+    padding: 2rem;
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+.trust-block__item:nth-child(3) {
+    grid-column: span 3;
+}
+
+.trust-block__item:nth-child(4) {
+    grid-column: span 2;
+}
+
+.trust-block__item-img img {
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.serch-mobile {
+    display: none;
+}
+
+.serch-mobile__form {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.serch-mobile__form::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url('../images/home/search.svg') no-repeat;
+    left: 6px;
+    top: 10px;
+}
+
+.serch-mobile__form-input {
+    padding: 0 2rem 0 3rem;
+    width: 100%;
+    height: 4rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #bfbfbf;
+
+}
+
+.serch-mobile__form-input::placeholder {
+    font-size: 16px;
+    color: #bfbfbf;
+}
