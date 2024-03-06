@@ -59,6 +59,9 @@ window.addEventListener("DOMContentLoaded", () => {
     headerSerch.classList.remove("searh-hidden");
   });
 
+  
+
+
   //TEXT
   const text = document.querySelector(".text p");
   if (text) {
