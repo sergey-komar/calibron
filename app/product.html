@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calibron</title>
+    <link rel="preload" href="./fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
@@ -149,6 +151,7 @@
                   type="text"
                   class="tests-block__form-input"
                   placeholder="Телефон"
+                  id="input-mask"
                   required
                 />
               </div>
@@ -673,6 +676,7 @@
               >
                 <input
                   type="text"
+                  
                   class="form-block__info-input"
                   placeholder="Имя"
                   required
@@ -686,6 +690,7 @@
                   type="text"
                   class="form-block__info-input"
                   placeholder="Телефон"
+                  id="input-mask3"
                   required
                 />
               </div>
@@ -796,7 +801,7 @@
         </div>
       </div>
     </footer>
-
+    <script src="https://unpkg.com/imask"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>
